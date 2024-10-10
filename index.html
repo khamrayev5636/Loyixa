@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./dist/style.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- Header start -->
+
+    <header class="site-header pt-4 lg:pt-4">
+      <div class="max-w-[1332px] w-full px-4 mx-auto">
+        <div class="header-wrapper flex justify-between lg:hidden">
+          <a class="header__logo" href="index.html">
+            <img src="./images/logo.svg" alt="site-logo" />
+          </a>
+          <div class="header-desc flex items-center">
+            <img src="./images/search.svg" alt="search img" />
+            <span class="header-lang ms-[18px]">Ру</span>
+            <button class="header__burger ms-[23px]"></button>
+          </div>
+        </div>
+        <div class="header-hidden lg:flex lg:justify-between lg:items-center">
+          <a class="header__logo hidden lg:block" href="index.html">
+            <img src="./images/logo.svg" alt="site-logo" />
+          </a>
+          <nav class="header-nav ps-5 mb-4 lg:ps-0 lg:mb-0">
+            <button class="header__close mt-[30px] mb-8 lg:hidden"></button>
+            <ul class="nav__list lg:flex">
+              <li class="nav__item mb-2 lg:mb-0 lg:me-[25px] active">
+                <a class="nav__link" href="#">Все предложения</a>
+              </li>
+              <li class="nav__item mb-2 lg:mb-0 lg:me-[25px]">
+                <a class="nav__link" href="#">Скидки</a>
+              </li>
+              <li class="nav__item mb-2 lg:mb-0 lg:me-[25px]">
+                <a class="nav__link" href="#">Акции</a>
+              </li>
+              <li class="nav__item mb-2 lg:mb-0 lg:me-[25px]">
+                <a class="nav__link" href="#">Промокоды</a>
+              </li>
+              <li class="nav__item mb-2 lg:mb-0 lg:me-[25px]">
+                <a class="nav__link" href="#">Кешбэк</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="lg:flex">
+            <div
+              class="flex items-center ms-[11px] mb-4 lg:ms-0 lg:mb-0 lg:me-6 xl:me-7"
+            >
+              <img class="lg:ms-5" src="./images/search.svg" alt="search img" />
+              <img
+                class="lg:ms-5"
+                src="./images/social.svg"
+                alt="socials img"
+              />
+              <img
+                class="lg:ms-5"
+                src="./images/Cabinet.svg"
+                alt="cabinet img"
+              />
+              <span class="text-lg">Ру</span>
+            </div>
+            <a
+              class="header__link ms-4 inline-block rounded-[10px] font-bold text-lg bg-[#FF2E4C] px-5 pt-[11px] pb-[14px] text-white lg:ms-0"
+              href="#"
+              >Добавить скидку</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom mt-3 lg:mt-5"></div>
+    </header>
+
+    <div class="overlay"></div>
+
+    <!-- Header end -->
+
+    <!-- Main start -->
+
+    <main>
+      <!-- Hero start -->
+      <section class="hero">
+        <div class="max-w-[1332px] w-full mx-auto lg:px-4">
+          <div class="lg:flex">
+            <!-- Hero card (Chap tarafdagi cardlar) start -->
+            <div class="hero__card bg-[#F0F6F6] pt-[60px] pb-[72px]">
+              <div class="px-4 mb-[20px]">
+                <h2 class="hero__subtitle mb-2 font-bold">Скидки дня</h2>
+                <span class="hero__text font-bold text-[#607282]"
+                  >23 предложения</span
+                >
+              </div>
+              <div
+                class="px-4 grid grid-cols-2 md:grid-cols-4 gap-2 lg:grid-cols-1"
+              >
+                <div
+                  class="hero-wrapper max-w-[160px] w-full mb-2 lg:mb-[20px]"
+                >
+                  <div class="relative">
+                    <img
+                      class="max-w-[250px] w-full h-[135px] rounded-tl-[10px] rounded-tr-[10px]"
+                      src="./images/korzinka.png"
+                      alt="korzinka img"
+                    />
+                    <span
+                      class="hero__data absolute text-sm font-bold text-[#E1102E] bg-[#FFEDEF] px-3 py-1 rounded-[4px] lg:hidden"
+                      >До 29 февраля</span
+                    >
+                  </div>
+                  <div class="hero__info bg-white p-3">
+                    <a
+                      class="hero__link text-sm uppercase text-[#607282]"
+                      href="#"
+                      >Korzinka.uz</a
+                    >
+                    <h3 class="hero__desc font-bold text-[#001c1c] mb-3">
+                      В четверг скидки на рыбу
+                    </h3>
+                    <div class="lg:flex justify-between items-center">
+                      <p class="hero__incor text-sm text-[#607282] mb-2">
+                        Скидки
+                      </p>
+                      <div class="flex mb-2">
+                        <a
+                          class="hero__avatr text-sm text-[#607282] rounded-[10px] px-2 py-1"
+                          href="#"
+                          >Кешбэк</a
+                        >
+                        <a
+                          class="hero__avatr text-sm text-[#fff] bg-[#607282] rounded-[10px] px-2 py-1"
+                          href="#"
+                          >3%</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="text-sm text-[#607282]">Супермаркеты</h4>
+                  </div>
+                </div>
+                <div
+                  class="hero-wrapper max-w-[160px] w-full truncate lg:mb-[20px]"
+                >
+                  <div class="relative">
+                    <img
+                      class="max-w-[250px] w-full h-[135px] rounded-tl-[10px] rounded-tr-[10px]"
+                      src="./images/mango.png"
+                      alt="mango img"
+                    />
+                    <span
+                      class="hero__data absolute text-sm font-bold text-[#E1102E] bg-[#FFEDEF] px-3 py-1 rounded-[4px] lg:hidden"
+                      >До 29 февраля</span
+                    >
+                  </div>
+                  <div class="hero__info bg-white p-3">
+                    <a
+                      class="hero__link text-sm uppercase text-[#607282]"
+                      href="#"
+                      >MANGO</a
+                    >
+                    <h3 class="hero__desc font-bold text-[#001c1c] mb-3">
+                      Акция 1+1
+                    </h3>
+                    <div class="lg:flex justify-between items-center">
+                      <p class="hero__incor text-sm text-[#607282] mb-2">
+                        Акции
+                      </p>
+                      <div class="flex mb-2">
+                        <a
+                          class="hero__avatr text-sm text-[#607282] rounded-[10px] px-2 py-1"
+                          href="#"
+                          >Кешбэк</a
+                        >
+                        <a
+                          class="hero__avatr text-sm text-[#fff] bg-[#607282] rounded-[10px] px-2 py-1"
+                          href="#"
+                          >3%</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="hero__txt text-sm text-[#607282]">
+                      Магазины брендовой одежды
+                    </h4>
+                  </div>
+                </div>
+                <div class="hero-wrapper max-w-[160px] w-full lg:mb-[20px]">
+                  <div class="relative">
+                    <img
+                      class="max-w-[250px] w-full h-[135px] rounded-tl-[10px] rounded-tr-[10px]"
+                      src="./images/texnomart.png"
+                      alt="texnomart img"
+                    />
+                    <span
+                      class="hero__data absolute text-sm font-bold text-[#E1102E] bg-[#FFEDEF] px-3 py-1 rounded-[4px] lg:hidden"
+                      >До 29 февраля</span
+                    >
+                  </div>
+                  <div class="hero__info bg-white p-3">
+                    <a
+                      class="hero__link text-sm uppercase text-[#607282]"
+                      href="#"
+                      >TEXNOMART</a
+                    >
+                    <h3 class="hero__desc font-bold text-[#001c1c] mb-3">
+                      До — 60% на бытовую технику в ТЦ «Samarkan...
+                    </h3>
+                    <div class="lg:flex justify-between items-center">
+                      <p class="hero__incor text-sm text-[#607282] mb-2">
+                        Скидки
+                      </p>
+                      <div class="flex mb-2">
+                        <a
+                          class="hero__avatr text-sm text-[#607282] rounded-[10px] px-2 py-1"
+                          href="#"
+                          >Кешбэк</a
+                        >
+                        <a
+                          class="hero__avatr text-sm text-[#fff] bg-[#607282] rounded-[10px] px-2 py-1"
+                          href="#"
+                          >3%</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="hero__txt text-sm text-[#607282]">
+                      Магазины электроники и бытовой техники
+                    </h4>
+                  </div>
+                </div>
+                <div class="hero-wrapper max-w-[160px] w-full lg:mb-[20px]">
+                  <div class="relative">
+                    <img
+                      class="max-w-[250px] w-full h-[135px] rounded-tl-[10px] rounded-tr-[10px]"
+                      src="./images/makro.png"
+                      alt="makro img"
+                    />
+                    <span
+                      class="hero__data absolute text-sm font-bold text-[#E1102E] bg-[#FFEDEF] px-3 py-1 rounded-[4px] lg:hidden"
+                      >До 29 февраля</span
+                    >
+                  </div>
+                  <div class="hero__info bg-white p-3">
+                    <a
+                      class="hero__link text-sm uppercase text-[#607282]"
+                      href="#"
+                      >Makro</a
+                    >
+                    <h3 class="hero__desc font-bold text-[#001c1c] mb-3">
+                      При покупке CIF пачка губок Salixan БЕСПЛАТНО
+                    </h3>
+                    <div class="lg:flex justify-between items-center">
+                      <p class="hero__incor text-sm text-[#607282] mb-2">
+                        Акции
+                      </p>
+                      <div class="flex mb-2">
+                        <a
+                          class="hero__avatr text-sm text-[#607282] rounded-[10px] px-2 py-1"
+                          href="#"
+                          >Кешбэк</a
+                        >
+                        <a
+                          class="hero__avatr text-sm text-[#fff] bg-[#607282] rounded-[10px] px-2 py-1"
+                          href="#"
+                          >3%</a
+                        >
+                      </div>
+                    </div>
+                    <h4 class="text-sm text-[#607282]">Супермаркеты</h4>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="hero__more block mx-auto w-[156px] mt-4 bg-white text-center pt-[11px] pb-[14px] rounded-[10px] text-[#3C5858] font-bold text-lg"
+                href="#"
+                >Показать все</a
+              >
+            </div>
+            <!-- Hero card (Chap tarafdagi cardlar) end -->
+
+            <!-- Hero Carousel start -->
+            <div class="hero__carousel-card px-4">
+              <!-- Hero Carousel start -->
+              <div
+                class="bg-[#F0F6F6] px-3 pt-5 rounded-lg mb-[50px] lg:mb-[70px] lg:px-[30px] lg:pt-[30px]"
+              >
+                <h1 class="hero__title font-bold mb-6 lg:mb-4">
+                  Топовые скидки
+                </h1>
+                <div class="border-b border-[#BEDADA] mb-5"></div>
+                <ul class="hero__list flex mb-[30px]">
+                  <li class="hero__item relative mr-3 lg:mr-[40px]">
+                    <a class="hero__item-link uppercase text-xl" href="#"
+                      >Питание</a
+                    >
+                  </li>
+                  <li class="hero__item mr-3 lg:mr-[40px]">
+                    <a class="hero__item-link uppercase text-xl" href="#"
+                      >Связь</a
+                    >
+                  </li>
+                  <li class="hero__item mr-3 lg:mr-[40px]">
+                    <a class="hero__item-link uppercase text-xl" href="#"
+                      >Магазины</a
+                    >
+                  </li>
+                </ul>
+                <div class="swiper pb-[53px]">
+                  <ul class="hero__carousel swiper-wrapper">
+                    <li
+                      class="hero__carousel-item swiper-slide max-w-[304px] w-full lg:max-w-[290px] lg:w-full"
+                    >
+                      <div class="relative">
+                        <img
+                          class="max-w-[304px] w-full h-[185px] rounded-tl-[10px] rounded-tr-[10px]"
+                          src="./images/gosty.png"
+                          alt="gosty img"
+                        />
+                        <span
+                          class="hero__data absolute text-sm font-bold text-[#E1102E] bg-[#FFEDEF] px-3 py-1 rounded-[4px]"
+                          >До 29 февраля</span
+                        >
+                      </div>
+                      <div class="hero__info p-3">
+                        <a
+                          class="hero__link text-sm uppercase text-[#607282]"
+                          href="#"
+                          >Gosty</a
+                        >
+                        <h3 class="hero__desc font-bold text-[#001c1c] mb-3">
+                          Каждый вторник — 20% на все меню
+                        </h3>
+                        <div class="flex justify-between items-center">
+                          <p class="hero__incor text-sm text-[#607282] mb-2">
+                            Скидки
+                          </p>
+                          <div class="flex mb-2">
+                            <a
+                              class="hero__avatr text-sm text-[#607282] rounded-[10px] px-2 py-1"
+                              href="#"
+                              >Кешбэк</a
+                            >
+                            <a
+                              class="hero__avatr text-sm text-[#fff] bg-[#607282] rounded-[10px] px-2 py-1"
+                              href="#"
+                              >3%</a
+                            >
+                          </div>
+                        </div>
+                        <span class="text-sm text-[#607282]">Рестораны</span>
+                      </div>
+                    </li>
+                    <li
+                      class="hero__carousel-item swiper-slide max-w-[304px] w-full lg:max-w-[290px] lg:w-full"
+                    >
+                      <div class="relative">
+                        <img
+                          class="max-w-[304px] w-full h-[185px] rounded-tl-[10px] rounded-tr-[10px]"
+                          src="./images/shosh.png"
+                          alt="shosh img"
+                        />
+                        <span
+                          class="hero__data absolute text-sm font-bold text-[#E1102E] bg-[#FFEDEF] px-3 py-1 rounded-[4px]"
+                          >До 29 февраля</span
+                        >
+                      </div>
+                      <div class="hero__info p-3">
+                        <a
+                          class="hero__link text-sm uppercase text-[#607282]"
+                          href="#"
+                          >Shosh</a
+                        >
+                        <h3 class="hero__desc font-bold text-[#001c1c] mb-3">
+                          Скидки на еду и напитки
+                        </h3>
+                        <div class="flex justify-between items-center">
+                          <p class="hero__incor text-sm text-[#607282] mb-2">
+                            Скидки
+                          </p>
+                          <div class="flex mb-2">
+                            <a
+                              class="hero__avatr text-sm text-[#607282] rounded-[10px] px-2 py-1"
+                              href="#"
+                              >Кешбэк</a
+                            >
+                            <a
+                              class="hero__avatr text-sm text-[#fff] bg-[#607282] rounded-[10px] px-2 py-1"
+                              href="#"
+                              >3%</a
+                            >
+                          </div>
+                        </div>
+                        <span class="text-sm text-[#607282]">Кафе</span>
+                      </div>
+                    </li>
+                    <li
+                      class="hero__carousel-item swiper-slide max-w-[304px] w-full lg:max-w-[290px] lg:w-full"
+                    >
+                      <div class="relative">
+                        <img
+                          class="max-w-[304px] w-full h-[185px] rounded-tl-[10px] rounded-tr-[10px]"
+                          src="./images/petrovic.png"
+                          alt="petrovic img"
+                        />
+                        <span
+                          class="hero__data absolute text-sm font-bold text-[#E1102E] bg-[#FFEDEF] px-3 py-1 rounded-[4px]"
+                          >До 29 февраля</span
+                        >
+                      </div>
+                      <div class="hero__info p-3">
+                        <a
+                          class="hero__link text-sm uppercase text-[#607282]"
+                          href="#"
+                          >Petrovich</a
+                        >
+                        <h3 class="hero__desc font-bold text-[#001c1c] mb-3">
+                          Ланч по выгодной цене и 2% кешбэк по промокоду
+                        </h3>
+                        <div class="flex justify-between items-center">
+                          <p class="hero__incor text-sm text-[#607282] mb-2">
+                            Скидки
+                          </p>
+                          <div class="flex mb-2">
+                            <a
+                              class="hero__avatr text-sm text-[#607282] rounded-[10px] px-2 py-1"
+                              href="#"
+                              >Кешбэк</a
+                            >
+                            <a
+                              class="hero__avatr text-sm text-[#fff] bg-[#607282] rounded-[10px] px-2 py-1"
+                              href="#"
+                              >3%</a
+                            >
+                          </div>
+                        </div>
+                        <span class="text-sm text-[#607282]">Рестораны</span>
+                      </div>
+                    </li>
+                    <li
+                      class="hero__carousel-item swiper-slide max-w-[304px] w-full lg:max-w-[290px] lg:w-full"
+                    >
+                      <div class="relative">
+                        <img
+                          class="max-w-[304px] w-full h-[185px] rounded-tl-[10px] rounded-tr-[10px]"
+                          src="./images/korzinka.png"
+                          alt="korzinka img"
+                        />
+                        <span
+                          class="hero__data absolute text-sm font-bold text-[#E1102E] bg-[#FFEDEF] px-3 py-1 rounded-[4px]"
+                          >До 29 февраля</span
+                        >
+                      </div>
+                      <div class="hero__info p-3">
+                        <a
+                          class="hero__link text-sm uppercase text-[#607282]"
+                          href="#"
+                          >Korzinka.uz</a
+                        >
+                        <h3 class="hero__desc font-bold text-[#001c1c] mb-3">
+                          В четверг скидки на рыбу
+                        </h3>
+                        <div class="flex justify-between items-center">
+                          <p class="hero__incor text-sm text-[#607282] mb-2">
+                            Скидки
+                          </p>
+                          <div class="flex mb-2">
+                            <a
+                              class="hero__avatr text-sm text-[#607282] rounded-[10px] px-2 py-1"
+                              href="#"
+                              >Кешбэк</a
+                            >
+                            <a
+                              class="hero__avatr text-sm text-[#fff] bg-[#607282] rounded-[10px] px-2 py-1"
+                              href="#"
+                              >3%</a
+                            >
+                          </div>
+                        </div>
+                        <span class="text-sm text-[#607282]">Супермаркеты</span>
+                      </div>
+                    </li>
+                    <li
+                      class="hero__carousel-item swiper-slide max-w-[304px] w-full lg:max-w-[290px] lg:w-full"
+                    >
+                      <div class="relative">
+                        <img
+                          class="max-w-[304px] w-full h-[185px] rounded-tl-[10px] rounded-tr-[10px]"
+                          src="./images/texnomart.png"
+                          alt="texnomart img"
+                        />
+                        <span
+                          class="hero__data absolute text-sm font-bold text-[#E1102E] bg-[#FFEDEF] px-3 py-1 rounded-[4px]"
+                          >До 29 февраля</span
+                        >
+                      </div>
+                      <div class="hero__info p-3">
+                        <a
+                          class="hero__link text-sm uppercase text-[#607282]"
+                          href="#"
+                          >TEXNOMART</a
+                        >
+                        <h3 class="hero__desc font-bold text-[#001c1c] mb-3">
+                          До — 60% на бытовую технику в ТЦ «Samarkand Darvoza»
+                        </h3>
+                        <div class="flex justify-between items-center">
+                          <p class="hero__incor text-sm text-[#607282] mb-2">
+                            Скидки
+                          </p>
+                          <div class="flex mb-2">
+                            <a
+                              class="hero__avatr text-sm text-[#607282] rounded-[10px] px-2 py-1"
+                              href="#"
+                              >Кешбэк</a
+                            >
+                            <a
+                              class="hero__avatr text-sm text-[#fff] bg-[#607282] rounded-[10px] px-2 py-1"
+                              href="#"
+                              >3%</a
+                            >
+                          </div>
+                        </div>
+                        <span class="text-sm text-[#607282]">Супермаркеты</span>
+                      </div>
+                    </li>
+                    <li
+                      class="hero__carousel-item swiper-slide max-w-[304px] w-full lg:max-w-[290px] lg:w-full"
+                    >
+                      <div class="relative">
+                        <img
+                          class="max-w-[304px] w-full h-[185px] rounded-tl-[10px] rounded-tr-[10px]"
+                          src="./images/makro.png"
+                          alt="makro img"
+                        />
+                        <span
+                          class="hero__data absolute text-sm font-bold text-[#E1102E] bg-[#FFEDEF] px-3 py-1 rounded-[4px]"
+                          >До 29 февраля</span
+                        >
+                      </div>
+                      <div class="hero__info p-3">
+                        <a
+                          class="hero__link text-sm uppercase text-[#607282]"
+                          href="#"
+                          >Makro</a
+                        >
+                        <h3 class="hero__desc font-bold text-[#001c1c] mb-3">
+                          В четверг скидки на рыбу
+                        </h3>
+                        <div class="flex justify-between items-center">
+                          <p class="hero__incor text-sm text-[#607282] mb-2">
+                            Скидки
+                          </p>
+                          <div class="flex mb-2">
+                            <a
+                              class="hero__avatr text-sm text-[#607282] rounded-[10px] px-2 py-1"
+                              href="#"
+                              >Кешбэк</a
+                            >
+                            <a
+                              class="hero__avatr text-sm text-[#fff] bg-[#607282] rounded-[10px] px-2 py-1"
+                              href="#"
+                              >3%</a
+                            >
+                          </div>
+                        </div>
+                        <span class="text-sm text-[#607282]">Супермаркеты</span>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+              <!-- Hero Carousel end -->
+
+              <!-- Faq start -->
+              <div class="mb-[50px] lg:mb-[60px]">
+                <h2
+                  class="faq__title text-[28px] font-bold text-[#023131] leading-8 mb-4"
+                >
+                  Добро пожаловать на сайт
+                </h2>
+                <p class="faq__text text-lg text-[#001C1C] mb-3 font-bold">
+                  Ваш надёжный помощник в поиске лучших скидок и акций различных
+                  компаний!
+                </p>
+                <p class="faq__info text-[17px] leading-6 text-[#3C5858] mb-3">
+                  Мы собрали для вас все самые выгодные предложения,
+                  чтобы вы могли сэкономить свои деньги и получить максимум
+                  удовольствия от покупок.
+                </p>
+                <span class="faq__link text-[17px] leading-6 text-[#3C5858]"
+                  >Развернуть текст</span
+                >
+              </div>
+
+              <div>
+                <h2
+                  class="faq__subtitle font-bold text-[44px] leading-[50px] mb-5"
+                >
+                  FAQ
+                </h2>
+                <details class="faq__det">
+                  <summary
+                    class="faq__sum relative list-none text-xl text-[#3C5858] mb-4 font-bold"
+                  >
+                    Какие компании представлены на сайте?
+                  </summary>
+                  <p class="faq__text text-lg text-[#3C5858]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                    cupiditate consequuntur repellendus a esse corporis optio,
+                    iure alias blanditiis tempora quas, quisquam unde. Alias,
+                    sint dolores dolorem sunt, magni laborum consectetur
+                    sapiente ut neque omnis minus dicta? Itaque a qui possimus
+                    eligendi. Veritatis quam autem repudiandae, maxime placeat
+                    est expedita.
+                  </p>
+                </details>
+                <div class="faq__line my-6"></div>
+                <details class="faq__det">
+                  <summary
+                    class="faq__sum relative list-none text-xl text-[#3C5858] mb-4 font-bold"
+                  >
+                    Как я могу быть в курсе новых скидок и акций на сайте?
+                  </summary>
+                  <p class="faq__text text-lg text-[#3C5858]">
+                    Чтобы быть в курсе новых скидок и акций на сайте, вы можете
+                    подписаться на наш <a
+                      class="text-[#FF2E4C]"
+                      href="https://t.me/khamrayev_5636"
+                      >телеграм-канал</a
+                    >
+                    или следить за новостями.
+                  </p>
+                  <p class="faq__text text-lg text-[#3C5858]">
+                    Мы регулярно отправляем информацию о новых предложениях
+                    и акциях нашим подписчикам, чтобы они всегда могли быть
+                    в курсе последних скидок и эксклюзивных предложений.
+                  </p>
+                  <p class="faq__text text-lg text-[#3C5858]">
+                    Также можно регулярно посещать сайт и проверять разделы
+                    с акциями и скидками
+                  </p>
+                </details>
+                <div class="faq__line my-6"></div>
+                <details class="faq__det">
+                  <summary
+                    class="faq__sum relative list-none text-xl text-[#3C5858] mb-4 font-bold"
+                  >
+                    Могу ли я поделиться найденными скидками и акциями
+                    с друзьями?
+                  </summary>
+                  <p class="faq__text text-lg text-[#3C5858]">
+                    Чтобы быть в курсе новых скидок и акций на сайте, вы можете
+                    подписаться на наш <a
+                      class="text-[#FF2E4C]"
+                      href="https://t.me/khamrayev_5636"
+                      >телеграм-канал</a
+                    >
+                    или следить за новостями.
+                  </p>
+                  <p class="faq__text text-lg text-[#3C5858]">
+                    Мы регулярно отправляем информацию о новых предложениях
+                    и акциях нашим подписчикам, чтобы они всегда могли быть
+                    в курсе последних скидок и эксклюзивных предложений.
+                  </p>
+                  <p class="faq__text text-lg text-[#3C5858]">
+                    Также можно регулярно посещать сайт и проверять разделы
+                    с акциями и скидками
+                  </p>
+                </details>
+                <div class="faq__line mt-6"></div>
+              </div>
+
+              <!-- Faq end -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero end -->
+    </main>
+
+    <!-- Main end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
