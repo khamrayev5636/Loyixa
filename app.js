@@ -19,6 +19,9 @@ let swiper = new Swiper(".swiper", {
   spaceBetween: 30,
   freeMode: true,
   loop:true,
+  navigation: {
+  nextEl: ".swiper-button-next",
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

@@ -195,6 +195,10 @@ body {
   bottom: 20px;
 }
 
+.swiper-button-next {
+  display: none;
+}
+
 /* Hero end */
 
 /* Faq start */
@@ -362,6 +366,25 @@ body {
   .hero__desc {
     font-size: 18px;
     line-height: 23px;
+  }
+
+  .swiper-button-next {
+    width: 50px;
+    height: 50px;
+    display: flex;
+  }
+
+  .swiper-button-next::after {
+    position: relative;
+    right: calc(50% - 30px);
+    top: calc(50% - 50px);
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #607282;
+    content: url("../images/arrow-right.svg");
   }
 }
 
