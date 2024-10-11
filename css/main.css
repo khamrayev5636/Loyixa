@@ -398,6 +398,11 @@ body {
     top: 5px;
     right: 0;
   }
+
+  .faq__text {
+    width: 750px;
+    margin-left: 110px;
+  }
 }
 
 /* Faq end */
